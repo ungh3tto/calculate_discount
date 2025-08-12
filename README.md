@@ -3,31 +3,22 @@ This is a simple Python program that calculates the final price of an item after
 If the discount is less than 20%, the program returns the original price without changes.
 It’s designed for easy interaction with the user and displays friendly messages.
 
-**Features**
+Example:
 
-Prompts the user to enter:
-The original price of an item.
-The discount percentage.
-Applies the discount only if it is 20% or higher.
+=== Discount Calculator ===
+Enter the original price ($): 100
+Enter the discount percentage: 25
+🎉 You got a 25% discount!
+Original price: $100.00
+Final price after discount: $75.00
 
 
-**Displays:**
+if discount is less than 20%
 
-Original price
-Discount percentage (if applicable)
-Final price after discount (if applicable)
-Prints a message when no discount is applied.
+=== Discount Calculator ===
+Enter the original price ($): 80
+Enter the discount percentage: 10
+ℹ️ Discount less than 20% — no discount applied.
+Price remains: $80.00
 
-**How It Works**
 
-1) Function calculate_discount(price, discount_percent)
-     Checks if the discount percentage is greater than or equal to 20%.
-     If yes, calculates the discounted price and returns it.
-     If no, returns the original price unchanged.
-
-2) User Input & Output
-     Asks the user for the original price and discount percentage.
-     Calls calculate_discount() to determine the final price.
-     Displays friendly output with either:
-        Discount details and the reduced price, or
-        A message saying no discount was applied.
